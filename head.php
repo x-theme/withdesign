@@ -13,7 +13,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 <div class='layout'>
 	<div class='header-wrapper'>
 		<div class='header'>
-			<div class='logo'><a href="<?php echo G5_URL ?>"><img src="<?=x::theme_url('img/default_logo.png')?>"></a></div>		
+			<div class='logo'><a href="<?=g::url()?>"><img src="<?=x::theme_url('img/default_logo.png')?>"></a></div>		
 			<div class='menu'>    
 				<ul>
 					<li><a href='javascript: void(0)'>회사소개</a></li>
