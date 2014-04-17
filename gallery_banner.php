@@ -74,7 +74,7 @@
 	$theme_name = $theme_config['name'][L];
 	if ( empty($theme_name) ) continue;
 
-	$type = explode(',', $theme_config['type']);
+	$type = explode(',', $theme_config['view']);
 				
 				
 	if ( in_array( 'pc', $type ) ) {
