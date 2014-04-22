@@ -112,10 +112,10 @@
 	$theme_config = load_config ( $path );
 	$theme_name = $theme_config['name'][L];
 	if ( empty($theme_name) ) continue;		
-	$type = explode(',', $theme_config['type']);
+	$type = explode(',', $theme_config['view']);
 	
 	if ( in_array( 'pc', $type ) ) {
-	?>
+	?>	
 		<div class='bullet' banner_num = '<?=$i?>'>
 			<img status = 'off' src='<?=x::url_theme()?>/img/bullet_off.png'/>
 			<img status = 'on' src='<?=x::url_theme()?>/img/bullet_on.png'/>
@@ -124,7 +124,7 @@
 	
 		$i++;
 		}
-	}?>
+	}?>	
 	</div>
 </div>
 <style>
