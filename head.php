@@ -16,7 +16,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 			<div class='logo'><a href="<?=g::url()?>"><img src="<?=x::theme_url('img/default_logo.png')?>"></a></div>		
 			<div class='menu'>    
 				<ul>
-					<li><a href='javascript: void(0)'>회사소개</a></li>
+					<li><a href='<?=g::url()?>'>회사소개</a></li>
 					<li><a href='javascript: void(0)' class='menu_services'>서비스</a></li>
 					<li><a href='javascript: void(0)' class='menu_portfolio'>포트폴리오</a></li>
 					<li><a href='javascript: void(0)' class='menu_contact_us'>제작견적의뢰</a></li>
