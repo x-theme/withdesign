@@ -40,4 +40,7 @@ $(function(){
 		$('html, body').animate({scrollTop:$('#support').position().top-87}, 'slow');
 	});	
 	
+	$(".menu_information").click(function() {
+		$('html, body').animate({scrollTop:$('#information').position().top-87}, 'slow');
+	});
 });

@@ -3,7 +3,7 @@
 include 'gallery_banner.php';
 ?>
 <!--INFORMATION-->
-<div class='information-wrapper'>
+<div class='information-wrapper' id='information'>
 	<div class='information'>
 		<div class='information-image'><div class='inner'><img src="<?=x::theme_url('img/default_information.png')?>"/></div></div>
 		<div class='information-details'>
