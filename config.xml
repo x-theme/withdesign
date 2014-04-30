@@ -22,10 +22,10 @@
 	<menu>
 		<top>
 			<name>
-				<en>Menu Top</en>
+				<en>Contact Us Forum</en>
 				<ko>상단 톱 메뉴</ko>
 			</name>
-			<max>0</max>
+			<max>1</max>
 		</top>
 		<left>
 			<name>

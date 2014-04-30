@@ -6,13 +6,14 @@
 
 	$action_url = g::url().'/bbs/write_update.php';
 	$application_status = "님께서 ".date('Y.m.d H:i')."에 작업 의뢰를 하였습니다.";
-	$bo_table = bo_table(1);
+	$_bo_table = x::menus('top')[0]['url'];
+	if ( empty($_bo_table) ) $_bo_table = bo_table(1);
 	
 ?>
     <form name="fwrite" id="fwrite" action="<?php echo $action_url ?>"  method="post" enctype="multipart/form-data" autocomplete="off" target='submit_contact_form'>
     <input type="hidden" name="uid" value="<?php echo get_uniqid(); ?>">
     <input type="hidden" name="w" value="<?php echo $w ?>">
-    <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
+    <input type="hidden" name="bo_table" value="<?php echo $_bo_table ?>">
     <input type="hidden" name="wr_id" value="<?php echo $wr_id ?>">
     <input type="hidden" name="sca" value="<?php echo $sca ?>">
     <input type="hidden" name="sfl" value="<?php echo $sfl ?>">
